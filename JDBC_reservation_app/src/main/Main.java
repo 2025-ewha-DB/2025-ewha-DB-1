@@ -197,9 +197,7 @@ public class Main {
                             System.out.println("ID: " + r.getItemId() + ", 이름: " + r.getItemName() + ", 타입: " + r.getItemType());
                         }
 
-// 5. 사용자로부터 대여할 아이템 선택 받기
                         System.out.print("\n대여할 아이템 ID를 쉼표(,)로 구분해서 입력하세요 (예: 1,3,5): ");
-                        scanner.nextLine(); // 이전 nextInt() 후 개행 소비
                         String[] selectedIds = scanner.nextLine().split(",");
                         List<Integer> selectedItemIds = new ArrayList<>();
                         for (String id : selectedIds) {
